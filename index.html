@@ -120,6 +120,59 @@
       .contact .cta{margin-top:25px}
       footer{gap:20px;flex-direction:column}
     }
+    /* Creative Focus */
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 50px;
+}
+
+.focus-card {
+  padding: 32px;
+  min-height: 220px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 24px;
+  background: rgba(255,255,255,.025);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.focus-number {
+  font-size: 13px;
+  color: rgba(255,255,255,.4);
+  letter-spacing: .12em;
+}
+
+.focus-category {
+  font-size: 12px;
+  letter-spacing: .12em;
+  color: rgba(255,255,255,.45);
+  margin-bottom: 12px;
+}
+
+.focus-card h3 {
+  font-size: 28px;
+  margin: 0 0 12px;
+}
+
+.focus-description {
+  color: rgba(255,255,255,.55);
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+@media (max-width: 700px) {
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-card {
+    min-height: 190px;
+    padding: 26px;
+  }
+}
   </style>
 </head>
 <body>
@@ -149,43 +202,76 @@
     </section>
 
     <section id="work">
-      <div class="container">
-        <div class="section-head">
-          <h2 class="section-title">Selected<br>work.</h2>
-          <p class="section-note">Kumpulan project pilihan. Ganti gambar dan deskripsi di file ini dengan karya kamu sendiri.</p>
+  <div class="container">
+
+    <div class="section-head">
+      <h2 class="section-title">Creative<br>focus.</h2>
+
+      <p class="section-note">
+        Bidang yang saya eksplorasi melalui berbagai
+        proyek dan eksperimen visual.
+      </p>
+    </div>
+
+    <div class="focus-grid">
+
+      <article class="focus-card">
+        <span class="focus-number">01</span>
+
+        <div>
+          <p class="focus-category">GRAPHIC DESIGN</p>
+          <h3>Visual Design</h3>
+          <p class="focus-description">
+            Poster, visual composition, typography,
+            dan eksplorasi layout.
+          </p>
         </div>
+      </article>
 
-        <div class="filters">
-          <button class="filter active" data-filter="all">All</button>
-          <button class="filter" data-filter="graphic">Graphic Design</button>
-          <button class="filter" data-filter="motorsport">Motorsport</button>
-          <button class="filter" data-filter="photo">Photography</button>
-          <button class="filter" data-filter="motion">Motion</button>
+      <article class="focus-card">
+        <span class="focus-number">02</span>
+
+        <div>
+          <p class="focus-category">MOTORSPORT</p>
+          <h3>Racing Visuals</h3>
+          <p class="focus-description">
+            Livery, racing visuals, dan eksplorasi
+            desain yang terinspirasi dari motorsport.
+          </p>
         </div>
+      </article>
 
-        <div class="projects" id="projects">
-          <article class="project featured" data-category="graphic" data-title="Urban Visual Poster" data-description="Eksplorasi poster dengan pendekatan urban-futuristic, typography kuat, dan visual utama yang menjadi focal point." data-image="">
-            <div class="project-image"><div class="placeholder">PROJECT 01 · GRAPHIC DESIGN</div></div>
-            <div class="project-body"><div class="project-meta"><span>Graphic Design</span><span>2026</span></div><h3>Urban Visual Poster</h3><p>Poster / Key Visual</p></div>
-          </article>
+      <article class="focus-card">
+        <span class="focus-number">03</span>
 
-          <article class="project small" data-category="motorsport" data-title="Formula 4 Livery" data-description="Eksplorasi konsep livery motorsport dengan sistem grafis yang dirancang agar tetap terbaca dari berbagai sudut." data-image="">
-            <div class="project-image"><div class="placeholder">PROJECT 02 · MOTORSPORT</div></div>
-            <div class="project-body"><div class="project-meta"><span>Motorsport</span><span>2026</span></div><h3>Formula 4 Livery</h3><p>Vehicle Livery</p></div>
-          </article>
-
-          <article class="project small" data-category="photo" data-title="Street Frames" data-description="Koleksi fotografi dengan fokus pada momen, framing, dan karakter cahaya di lingkungan urban." data-image="">
-            <div class="project-image"><div class="placeholder">PROJECT 03 · PHOTOGRAPHY</div></div>
-            <div class="project-body"><div class="project-meta"><span>Photography</span><span>2026</span></div><h3>Street Frames</h3><p>Photography Series</p></div>
-          </article>
-
-          <article class="project featured" data-category="motion" data-title="Motion Identity" data-description="Eksperimen motion graphic untuk membangun visual identity yang terasa dinamis dan modern." data-image="">
-            <div class="project-image"><div class="placeholder">PROJECT 04 · MOTION</div></div>
-            <div class="project-body"><div class="project-meta"><span>Motion</span><span>2026</span></div><h3>Motion Identity</h3><p>Motion Graphic / Edit</p></div>
-          </article>
+        <div>
+          <p class="focus-category">PHOTOGRAPHY</p>
+          <h3>Visual Stories</h3>
+          <p class="focus-description">
+            Eksplorasi fotografi, visual storytelling,
+            dan pengolahan gambar.
+          </p>
         </div>
-      </div>
+      </article>
+
+      <article class="focus-card">
+        <span class="focus-number">04</span>
+
+        <div>
+          <p class="focus-category">MOTION</p>
+          <h3>Motion & Edit</h3>
+          <p class="focus-description">
+            Motion graphics, video editing, typography,
+            dan eksperimen visual bergerak.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
     </section>
+    
 
     <section id="about">
       <div class="container about-grid">
