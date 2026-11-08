@@ -184,6 +184,35 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   padding-bottom: 4px;
 }
+    
+/* Photo backgrounds */
+.anime-card {
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.92),
+      rgba(0, 0, 0, 0.48)
+    ),
+    url("Animetic [2ED8E00].png");
+}
+
+.motorsport-card {
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.92),
+      rgba(0, 0, 0, 0.48)
+    ),
+    url("Motorsport [15C690D].png");
+}
+
+.anime-card,
+.motorsport-card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+    
   </style>
 </head>
 <body>
@@ -226,7 +255,7 @@
 
     <div class="focus-grid">
 
-      <article class="focus-card">
+      <article class="focus-card anime-card">
         <span class="focus-number">01</span>
 
         <div>
@@ -245,7 +274,7 @@
         </div>
       </article>
 
-      <article class="focus-card">
+      <article class="focus-card motorsport-card">
         <span class="focus-number">02</span>
 
         <div>
